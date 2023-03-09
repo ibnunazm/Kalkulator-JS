@@ -1,0 +1,112 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(270deg, #5fb7ff, #8e4aff);
+    background-size: 400% 400%;
+    animation: AnimationName 30s ease infinite;
+    }
+    
+    @keyframes AnimationName {
+        0%{background-position:99% 0%}
+        50%{background-position:2% 100%}
+        100%{background-position:99% 0%}
+    }
+
+#container {
+    perspective: 40px;
+}
+
+#calculator {
+    padding: 40px 20px 20px 20px;
+    width: 350px;
+    background-color: #eeeeee;
+    box-shadow: 0 2px 8px #333;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.calculator-screen {
+    color: #333;
+    font-size: 40px;
+    padding: 5px 20px 20px 20px;
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    border: none;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    height: 80px;
+    background-color: rgb(97, 97, 97);
+    color: #fff;
+    font-size: 32px;
+    width: 25%;
+    outline: none;
+    border-radius: 50px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #999999;
+    transition: all 0.4s;
+}
+
+button:active {
+    background-color: #333;
+}
+
+.all-clear, .equal-sign{
+    width: 54%;
+}
+
+.all-clear {
+    background-color: rgb(243, 85, 85);
+}
+
+.all-clear:hover {
+    background-color: rgb(177, 43, 43);
+}
+
+.all-clear:active {
+    background-color: rgb(121, 25, 25);
+}
+
+.delete {
+    background-color: rgb(255, 189, 8);
+}
+
+.delete:hover {
+    background-color: rgb(184, 142, 27);
+}
+
+.delete:active {
+    background-color: rgb(117, 90, 14);
+}
+
+.operator, .equal-sign {
+    background-color: rgb(45, 196, 176);
+}
+
+.operator:hover, .equal-sign:hover{
+    background-color:  rgb(42, 145, 131);
+}
+
+.operator:active, .equal-sign:active{
+    background-color:  rgb(18, 95, 85);
+}
